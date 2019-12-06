@@ -1,0 +1,26 @@
+<div class="title">
+    <div class="display">
+        <span>training ver</span>
+        <app-time-display [inputData]="present"></app-time-display>
+        <app-buttons (clickEvent)="startTime($event)"></app-buttons>
+    </div>
+
+    <div class="display">
+        <span>refactory ver</span>
+        <app-time-and-buttons></app-time-and-buttons>
+        <!-- <app-time-and-buttons></app-time-and-buttons>
+        <app-time-and-buttons></app-time-and-buttons>
+        <app-time-and-buttons></app-time-and-buttons> -->
+    </div>
+
+    <div class="display">
+        <a [routerLink]="'/clock'" >move to clock(routerLink)</a>
+    </div>
+
+    <div class="display">
+        <button (click)="goClock()">
+            move to clock(routerService)
+        </button>
+    </div>
+</div>
+    
